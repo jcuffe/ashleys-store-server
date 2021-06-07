@@ -53,13 +53,6 @@ export const createShippingIntentMutation = mutationField(
     resolve: (_, args) => {
       const { items, shippingAddress } = args.shipping
       return createShippingIntent(items, shippingAddress)
-        .then((r) => {
-          console.log('SHIPPING', r)
-          return r
-        })
-        .catch((err) => {
-          console.log(err)
-        })
     },
   },
 )

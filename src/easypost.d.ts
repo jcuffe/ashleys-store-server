@@ -65,9 +65,14 @@ declare module '@easypost/api' {
   }
 
   export interface Shipment {
-    to_address: Address
-    from_address: Address
-    parcel: Parcel
+    id: string
+    rates: Rate[]
+  }
+
+  export interface Rate {
+    id: string
+    rate: string
+    service: string
   }
 
   class ShipmentFactory {
