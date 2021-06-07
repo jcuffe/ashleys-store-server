@@ -3,7 +3,6 @@ env.config()
 
 import path from 'path'
 
-import bodyParser from 'body-parser'
 import express from 'express'
 
 import Stripe from 'stripe'
