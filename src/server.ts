@@ -88,6 +88,6 @@ const apolloServer = new ApolloServer({ schema })
 
 apolloServer.applyMiddleware({ app })
 
-app.listen(5000, (): void =>
-  console.log(`Node server listening on port ${5000}!`),
+app.listen(process.env.PORT, (): void =>
+  console.log(`Node server listening on port ${process.env.PORT}!`),
 )

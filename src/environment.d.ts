@@ -7,6 +7,7 @@ declare global {
       STRIPE_PUBLISHABLE_KEY: string
       STRIPE_WEBHOOK_SECRET: string
       EASY_POST_API_KEY: string
+      PORT: number
     }
   }
 }
