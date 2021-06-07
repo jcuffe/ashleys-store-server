@@ -1,0 +1,32 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Jared Cuffe <jcuffe@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@easypost/api": "^3.10.1",
+    "apollo-server-express": "^2.25.0",
+    "dinero.js": "^1.8.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "graphql": "^15.5.0",
+    "nexus": "^1.0.0",
+    "shippo": "^1.6.0",
+    "stripe": "^8.150.0",
+    "type-fest": "^1.2.0",
+    "usps-web-tools-node-sdk": "^0.6.1"
+  },
+  "scripts": {
+    "dev": "ts-node-dev -r tsconfig-paths/register --transpile-only --no-notify src/server.ts",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.12",
+    "@types/node": "^15.6.2",
+    "@types/stripe": "^8.0.417",
+    "ts-node-dev": "^1.1.6",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^4.3.2"
+  }
+}
